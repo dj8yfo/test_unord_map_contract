@@ -2,13 +2,13 @@ use near_sdk::{log, near};
 
 #[near(contract_state)]
 pub struct Contract {
-    greetings: near_sdk::store::UnorderedMap<String, String>,
+    greetings: near_sdk::store::Vector<String>,
 }
 
 impl Default for Contract {
     fn default() -> Self {
         Self {
-            greetings: near_sdk::store::UnorderedMap::new(b"g"),
+            greetings: near_sdk::store::Vector::new(b"g"),
         }
     }
 }
@@ -16,6 +16,6 @@ impl Default for Contract {
 #[near]
 impl Contract {
     pub fn get_greeting(&self) -> String {
-        self.greetings.get("qwe").unwrap().clone()
+        self.greetings.get(1).unwrap().clone()
     }
 }
