@@ -2,13 +2,13 @@ use near_sdk::near;
 
 #[near(contract_state)]
 pub struct Contract {
-    greetings: near_sdk::store::IterableSet<String>,
+    greetings: near_sdk::store::IterableMap<String, String>,
 }
 
 impl Default for Contract {
     fn default() -> Self {
         Self {
-            greetings: near_sdk::store::IterableSet::new(b"g"),
+            greetings: near_sdk::store::IterableMap::new(b"g"),
         }
     }
 }
@@ -16,6 +16,6 @@ impl Default for Contract {
 #[near]
 impl Contract {
     pub fn get_greeting(&self) -> bool {
-        self.greetings.contains("host")
+        self.greetings.contains_key("host")
     }
 }
