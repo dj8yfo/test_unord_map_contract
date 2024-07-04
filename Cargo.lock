@@ -3077,7 +3077,7 @@ dependencies = [
 [[package]]
 name = "near-sdk"
 version = "5.1.0"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#b7d628b70acc5f22b1518590014080e5a05ad79c"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#3612c14be1a066d949a4c580b3a07a6018a2a7b2"
 dependencies = [
  "base64 0.21.7",
  "borsh",
@@ -3101,7 +3101,7 @@ dependencies = [
 [[package]]
 name = "near-sdk-macros"
 version = "5.1.0"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#b7d628b70acc5f22b1518590014080e5a05ad79c"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#3612c14be1a066d949a4c580b3a07a6018a2a7b2"
 dependencies = [
  "Inflector",
  "darling",
@@ -3146,7 +3146,7 @@ checksum = "29e1897481272eb144328abd51ca9f59b5b558e7a6dc6e2177c8c9bb18fbd818"
 [[package]]
 name = "near-sys"
 version = "0.2.1"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#b7d628b70acc5f22b1518590014080e5a05ad79c"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_bschema_derive3#3612c14be1a066d949a4c580b3a07a6018a2a7b2"
 
 [[package]]
 name = "near-time"
