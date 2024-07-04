@@ -2,13 +2,13 @@ use near_sdk::near;
 
 #[near(contract_state)]
 pub struct Contract {
-    greetings: near_sdk::store::IterableMap<String, String>,
+    greetings: near_sdk::store::TreeMap<String, String>,
 }
 
 impl Default for Contract {
     fn default() -> Self {
         Self {
-            greetings: near_sdk::store::IterableMap::new(b"g"),
+            greetings: near_sdk::store::TreeMap::new(b"g"),
         }
     }
 }
